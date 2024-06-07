@@ -1,7 +1,7 @@
 # TODO
 - [X] Make it deploy
 - [X] Scaffold basic ui
-- [ ] Database
+- [X] Database
 - [ ] auth w/ clerk
 
 ## What's next? How do I make an app with this?

@@ -1,6 +1,8 @@
-# Create T3 App
-
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+# TODO
+- [X] Make it deploy
+- [X] Scaffold basic ui
+- [ ] Database
+- [ ] auth w/ clerk
 
 ## What's next? How do I make an app with this?
 

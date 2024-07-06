@@ -2,7 +2,12 @@
 - [X] Make it deploy
 - [X] Scaffold basic ui
 - [X] Database
-- [ ] auth w/ clerk
+- [X] auth w/ clerk
+- [X] image upload
+- [ ] taint
+- [ ] Next/Image
+- [ ] Error management
+- [ ] Routing
 
 ## What's next? How do I make an app with this?
 

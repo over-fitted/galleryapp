@@ -1,8 +1,10 @@
 import "~/styles/globals.css";
+import "@uploadthing/react/styles.css";
 import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
-
+import { TopNav } from "./_component/topnav";
 
 import { GeistSans } from "geist/font/sans";
+import { UploadButton } from "~/utils/uploadthing";
 
 export const metadata = {
   title: "Gallery App",
@@ -10,21 +12,7 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-function TopNav() {
-  return (
-    <nav className="flex items-center justify-between w-full p-4 text-xl font-semibold border-b">
-      <div>Gallery</div>
-      <div>
-        <SignedOut>
-          <SignInButton />
-        </SignedOut>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
-      </div>
-    </nav>
-  )
-}
+
 
 export default function RootLayout({
   children,

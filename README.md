@@ -4,8 +4,7 @@
 - [X] Database
 - [X] auth w/ clerk
 - [X] image upload
-- [ ] taint
-- [ ] Next/Image
+- [X] Next/Image
 - [ ] Error management
 - [ ] Routing
 

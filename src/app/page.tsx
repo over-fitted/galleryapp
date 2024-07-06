@@ -2,6 +2,7 @@ import { SignedOut, SignedIn } from "@clerk/nextjs";
 import { getMyImages } from "~/server/queries";
 import Image from "next/image";
 import { object } from "zod";
+import Link from "next/link";
 
 // prevents caching from showing stale data
 export const dynamic = "force-dynamic"
@@ -13,14 +14,16 @@ async function Images() {
     <div className="flex flex-wrap gap-4 justify-center">
       {images.map((image, index) => (
         <div key={image.id + "-" + index} className="relative h-48 w-48 flex flex-wrap flex-col gap-2">
-          <Image 
-            src={image.url} 
-            alt={image.name} 
-            style={{ objectFit: "contain" }}
-            width={192}
-            height={192}
-            className="rounded-lg" 
-          />
+          <Link href={`/img/${image.id}`}>
+            <Image 
+              src={image.url} 
+              alt={image.name} 
+              style={{ objectFit: "contain" }}
+              width={192}
+              height={192}
+              className="rounded-lg" 
+            />
+          </Link>
           <div>{image.name}</div>
         </div>
       ))}

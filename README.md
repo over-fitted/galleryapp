@@ -5,8 +5,8 @@
 - [X] auth w/ clerk
 - [X] image upload
 - [X] Next/Image
-- [ ] Error management
-- [ ] Routing
+- [X] Error management
+- [X] Parallel Routing
 
 ## What's next? How do I make an app with this?
 

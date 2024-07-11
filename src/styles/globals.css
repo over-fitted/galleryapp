@@ -5,3 +5,9 @@
 body {
     @apply bg-black text-white
 }
+
+/* reset modal styles */
+dialog {
+    max-width: 100vw;
+    max-height: 100vh;
+}

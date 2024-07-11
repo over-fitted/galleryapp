@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
   modal: React.ReactNode;
 }) {
-  return (
+  return (  
     <ClerkProvider>
       <html lang="en">
         <body className={`font-sans ${GeistSans.variable} flex flex-col gap-4`}>

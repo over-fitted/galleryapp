@@ -11,9 +11,9 @@ async function Images() {
   const images = await getMyImages();
 
   return (
-    <div className="flex flex-wrap gap-4 justify-center">
+    <div className="flex flex-wrap gap-4 justify-center p-4">
       {images.map((image, index) => (
-        <div key={image.id + "-" + index} className="relative h-48 w-48 flex flex-wrap flex-col gap-2">
+        <div key={image.id + "-" + index} className="h-48 w-48 flex flex-col p-4">
           <Link href={`/img/${image.id}`}>
             <Image 
               src={image.url} 
@@ -24,7 +24,7 @@ async function Images() {
               className="rounded-lg" 
             />
           </Link>
-          <div>{image.name}</div>
+          <div className="text-wrap break-words">{image.name}</div>
         </div>
       ))}
     </div>

@@ -4,7 +4,6 @@ import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@c
 import { TopNav } from "./_component/topnav";
 
 import { GeistSans } from "geist/font/sans";
-import { UploadButton } from "~/utils/uploadthing";
 
 export const metadata = {
   title: "Gallery App",

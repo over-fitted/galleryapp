@@ -1,7 +1,6 @@
 import { SignedOut, SignedIn } from "@clerk/nextjs";
 import { getMyImages } from "~/server/queries";
 import Image from "next/image";
-import { object } from "zod";
 import Link from "next/link";
 
 // prevents caching from showing stale data

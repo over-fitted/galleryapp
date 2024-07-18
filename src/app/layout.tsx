@@ -4,6 +4,7 @@ import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@c
 import { TopNav } from "./_component/topnav";
 
 import { GeistSans } from "geist/font/sans";
+import { Toaster } from "sonner";
 
 export const metadata = {
   title: "Gallery App",
@@ -28,6 +29,7 @@ export default function RootLayout({
           </div>
         {modal}
         <div id="modal-root" />
+        <Toaster />
         </body>
       </html>
     </ClerkProvider>

@@ -5,6 +5,7 @@ import { TopNav } from "./_component/topnav";
 
 import { GeistSans } from "geist/font/sans";
 import { Toaster } from "sonner";
+import { CSPostHogProvider } from "./_analytics/provider";
 
 export const metadata = {
   title: "Gallery App",
@@ -21,6 +22,7 @@ export default function RootLayout({
 }) {
   return (  
     <ClerkProvider>
+    <CSPostHogProvider>
       <html lang="en">
         <body className={`font-sans ${GeistSans.variable} dark`}>
           <div className="grid h-screen grid-rows-[auto,1fr]">
@@ -32,6 +34,7 @@ export default function RootLayout({
           <Toaster />
         </body>
       </html>
+    </CSPostHogProvider>
     </ClerkProvider>
   );
 }
